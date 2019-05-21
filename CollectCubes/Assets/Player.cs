@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     Rigidbody rb;
     float speed = 10f;
+    public Calculator calculator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,7 @@ public class Player : MonoBehaviour
     {
         if (collision.transform.CompareTag("Scores"))
         {
+            calculator.incrementScore();
             Destroy(collision.gameObject);
         }
     }

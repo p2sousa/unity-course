@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\Score.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/pablosousa/Projects/Games/CollectCubes/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

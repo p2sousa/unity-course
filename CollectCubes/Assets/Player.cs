@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     Rigidbody rb;
     float speed = 10f;
     // Start is called before the first frame update
@@ -45,4 +44,13 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector3(1, 0, 0) * speed);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.CompareTag("Scores"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
 }

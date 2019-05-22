@@ -6,12 +6,14 @@ public class Player : MonoBehaviour
 {
     Rigidbody rb;
     float speed = 10f;
-    public Calculator calculator;
+    AudioSource audio;
+    // public Calculator calculator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -51,7 +53,11 @@ public class Player : MonoBehaviour
     {
         if (collision.transform.CompareTag("Scores"))
         {
-            calculator.incrementScore();
+            // calculator.incrementScore();
+            GameObject calculator = GameObject.FindGameObjectWithTag("CalculatorScore");
+            calculator.GetComponent<Calculator>().incrementScore();
+            audio.Play();
+
             Destroy(collision.gameObject);
         }
     }

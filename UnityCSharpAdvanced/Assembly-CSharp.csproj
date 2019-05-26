@@ -63,6 +63,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\awakVsStart.cs" />
+    <Compile Include="Assets\Components.cs" />
+    <Compile Include="Assets\DestroyC.cs" />
+    <Compile Include="Assets\LinearInter.cs" />
+    <Compile Include="Assets\LookAt.cs" />
+    <Compile Include="Assets\Physics.cs" />
+    <Compile Include="Assets\TurnOnLight.cs" />
+    <Compile Include="Assets\Updates.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/pablosousa/Projects/Games/UnityCSharpAdvanced/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
